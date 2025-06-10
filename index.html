@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>  
 </head>
 <body>
     <main>
         <form action="casastro.php" method="post">
+            <!-- <img src="imagens/pexels-sean-whang-25006-804269.jpg" alt="paisagem"> -->
             <h1>Login</h1>
             <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p>
-            <label for="iemail"></label>
-            <input type=" email" name="email" id="iemail">
-            <label for="ipasw"></label>
-            <input type="password" name="pasw" id="ipasw">
-            <input type="submit" value="Entrar">
-            <button>Esqueci minha senha</button>
+            <div class="background">
+                <span class="material-symbols-outlined" class="icon">person</span>
+                <input type=" email" name="email" id="iemail" placeholder="Seu email">
+            </div>
+            <div class="background">
+                <span class="material-symbols-outlined" class="icon">key</span>
+                <input type="password" name="pasw" id="ipasw" placeholder="Sua senha">
+            </div>
+            <input type="submit" id="submit" value="Entrar">
+            <button>Esqueci a senha</button>
         </form>
     </main>
 </body>
