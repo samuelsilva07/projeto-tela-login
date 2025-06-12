@@ -10,19 +10,22 @@
 <body>
     <main>
         <form action="casastro.php" method="post">
-            <!-- <img src="imagens/pexels-sean-whang-25006-804269.jpg" alt="paisagem"> -->
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p>
-            <div class="background">
-                <span class="material-symbols-outlined" class="icon">person</span>
-                <input type=" email" name="email" id="iemail" placeholder="Seu email">
-            </div>
-            <div class="background">
-                <span class="material-symbols-outlined" class="icon">key</span>
-                <input type="password" name="pasw" id="ipasw" placeholder="Sua senha">
-            </div>
-            <input type="submit" id="submit" value="Entrar">
-            <button>Esqueci a senha</button>
+            <div class="image"></div>
+            <fieldset>
+                <h1>Login</h1>
+                <!-- <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p> -->
+                <div class="background-input">
+                    <label for="iemail" class="material-symbols-outlined" id="icon-person" >email</label>
+                    <input type=" email" name="email" id="iemail" placeholder="Seu email" required>
+                </div>
+                <div class="background-input">
+                    <label for="ipasw" class="material-symbols-outlined" id="icon-key">key</label>
+                    <input type="password" name="pasw" id="ipasw" placeholder="Sua senha" required min="6" max="10">
+                    <!-- <span class="material-symbols-outlined" id="icon-visibility">visibility</span> -->
+                </div>
+                <input type="submit" id="submit" value="Entrar">
+                <button>Esqueci minha senha</button>
+            </fieldset>
         </form>
     </main>
 </body>
