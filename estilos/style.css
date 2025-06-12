@@ -42,10 +42,10 @@ form {
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.162);
 }
 
-.image {
+div.image {
     height: 250px;
     width: 100%;
-    background: black url("../imagens/pexels-sean-whang-25006-804269.jpg") left center repeat-x fixed;
+    background: black url("../imagens/pexels-sean-whang-25006-804269.jpg") center center no-repeat fixed;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.288);
