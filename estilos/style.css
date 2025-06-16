@@ -8,45 +8,49 @@ lilás: #5f2c82
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
     --color1: #4ba5a2;    
-    --color1-light: #4dbcb8;
+    --color1-light: #4cb4b1;
     --color2: #5f2c82;
 }
 
 html, body {
     height: 100vh;
     width: 100vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: var(--color2);
-    position: absolute;
     text-align: center;
 }
 
 main {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 300px;
+    height: 100vh;
+    width: 100vw;
 }
 
 form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.162);
+    min-width: 300px;
 }
 
 div.image {
     height: 250px;
     width: 100%;
-    background: black url("../imagens/pexels-sean-whang-25006-804269.jpg") center center no-repeat fixed;
-    background-size: cover;
+    background: var(--color2) url("../imagens/pexels-sean-whang-25006-804269.jpg") center center no-repeat fixed;
+    background-size: cover; 
+    overflow: hidden;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.288);
 }
@@ -87,10 +91,11 @@ input, button {
 }
 
 div input {
-    width: 78%;
+    width: 82%;
+    margin-right: -0.5em;
     border-radius: 9px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.282) inset;
-    font-size: 14px;
+    font-size: 13.5px;
 }
 
 div input:focus {
