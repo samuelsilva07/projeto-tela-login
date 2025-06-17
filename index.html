@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>  
 </head>
 <body>
     <main>
-        <form action="casastro.php" method="post">
+        <section> 
             <div class="image"></div>
-            <fieldset>
-                <h1>Login</h1>
-                <!-- <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p> -->
+            <h1>Login</h1> 
+            <!-- <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p> -->
+            <form action="casastro.php" method="post">
                 <div class="background-input">
                     <label for="iemail" class="material-symbols-outlined" class="icon">email</label>
                     <input type=" email" name="email" id="iemail" placeholder="Seu email" required>
@@ -25,8 +26,8 @@
                 </div>
                 <input type="submit" id="submit" value="Entrar">
                 <button>Esqueci minha senha</button>
-            </fieldset>
-        </form>
+            </form>
+        </section>
     </main>
 </body>
 </html>
