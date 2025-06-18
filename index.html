@@ -10,22 +10,24 @@
 </head>
 <body>
     <main>
-        <section> 
-            <div class="image"></div>
-            <h1>Login</h1> 
-            <!-- <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p> -->
-            <form action="casastro.php" method="post">
-                <div class="background-input">
-                    <label for="iemail" class="material-symbols-outlined" class="icon">email</label>
-                    <input type=" email" name="email" id="iemail" placeholder="Seu email" required>
-                </div>
-                <div class="background-input">
-                    <label for="ipasw" class="material-symbols-outlined" class="icon">key</label>
-                    <input type="password" name="pasw" id="ipasw" placeholder="Sua senha" required min="6" max="10">
-                    <!-- <span class="material-symbols-outlined" id="icon-visibility">visibility</span> -->
-                </div>
-                <input type="submit" id="submit" value="Entrar">
-                <button>Esqueci minha senha</button>
+        <section id="login"> 
+            <span class="image"></span>
+            <section id="content">
+                <h1>Login</h1>
+                <!-- <p>Seja bem-vindo(a). Faça login para acessar sua conta e realizar as configurações no seu ambiente.</p> -->
+                <form action="casastro.php" method="post">
+                    <div class="background-input">
+                        <label for="iemail" class="material-symbols-outlined" class="icon">email</label>
+                        <input type=" email" name="email" id="iemail" placeholder="Seu email" required>
+                    </div>
+                    <div class="background-input">
+                        <label for="ipasw" class="material-symbols-outlined" class="icon">key</label>
+                        <input type="password" name="pasw" id="ipasw" placeholder="Sua senha" required min="6" max="10">
+                        <!-- <span class="material-symbols-outlined" id="icon-visibility">visibility</span> -->
+                    </div>
+                    <input type="submit" id="submit" value="Entrar">
+                    <button>Esqueci minha senha</button>
+            </section id="content">
             </form>
         </section>
     </main>

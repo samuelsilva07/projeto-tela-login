@@ -34,7 +34,7 @@ main {
     width: 100vw;
 }
 
-section {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,13 +42,16 @@ section {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.162);
+    width: 60%;
     min-width: 300px;
+    max-width: 380px;
 }
 
-div.image {
+span.image {
+    display: block;
     height: 250px;
     width: 100%;
-    background: var(--color2) url("../imagens/pexels-sean-whang-25006-804269.jpg") center center no-repeat fixed;
+    background: white url("../imagens/pexels-sean-whang-25006-804269.jpg") center center no-repeat fixed;
     background-size: cover; 
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
@@ -68,7 +71,10 @@ p {
 }
 
 form {
+    background-color: white;
     padding: 12px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
 }
 
 .background-input, #submit, button {
