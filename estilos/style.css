@@ -42,6 +42,8 @@ section#login {
     border-radius: 10px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.162);
     width: 340px;
+    transition: width .1s, height .1s;
+    transition-timing-function: ease;
 }
 
 div#image {
@@ -68,7 +70,12 @@ p {
 
 section.content {
     display: block;
+    margin: auto;
     padding: 12px;
+}
+
+form {
+    margin: auto;
 }
 
 .background-input, #submit, button {
@@ -78,32 +85,35 @@ section.content {
 .background-input {
     background-color: var(--color2);
     border-radius: 10px;
-    margin: 0px auto 2px;
+    margin-bottom: 3px;
+    padding: 5px 2px;
 }
 
-label {
-    display: block;
+.background-input > label {
     color: white;
+    width: 35px;
+    height: 100%;
 }
 
-input, button {
-    margin: 6px auto;
+.background-input > input {
     padding: 0.5em;
     font-size: 1em;
-}
-
-div input {
-    width: 82%;
-    margin-right: -0.5em;
+    width: calc(100% - 47px);
     border-radius: 9px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.282) inset;
     font-size: 13.5px;
 }
 
-div input:focus {
+.background.input > input:focus {
     outline: none;
     border: 2px solid black;
     transition: all 0.5s;
+}
+
+#submit, button {
+    margin: 6px auto;
+    padding: 0.5em;
+    font-size: 1em;
 }
 
 #submit {
