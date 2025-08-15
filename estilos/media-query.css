@@ -9,6 +9,8 @@
         float: right;
         width: 50%;
         height: 100%;
+        background-position: center left;
+        background-attachment: scroll;
     }
     section.content {
         float: left;
@@ -29,6 +31,7 @@
         float: left;
         width: 35%;
         height: 100%;
+        background-position: center left;
     }
     section.content {
         float: right;
